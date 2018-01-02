@@ -18,7 +18,7 @@ public class TestController
     private String bookAuthor;
     @Value("${book.name}")
     private String bookName;
-    @RequestMapping("/")
+    @RequestMapping("/testProperties")
     public String index(){
         return "Hello Spring Boot, book name is:"+bookName+" and book author is:"+bookAuthor;
     }
